@@ -35,7 +35,7 @@ public class QueueConsumer {
 			public void onMessage(Message message) {
 				TextMessage textMessage=(TextMessage)message;
 				try {
-					System.out.println("提取的消息："+ textMessage.getText() );
+					System.out.println("提取的消息1："+ textMessage.getText() );
 				} catch (JMSException e) {					
 					e.printStackTrace();
 				}
